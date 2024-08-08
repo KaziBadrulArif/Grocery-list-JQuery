@@ -1,0 +1,42 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #387F39;
+    font-family: "Mate", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container{
+    height: 70vh;
+    width: 120vh;
+    background-color: #BEDC74;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+}
+textarea{
+    margin-left: 28vh;
+    width: 50%;
+    resize: none;
+}
+li{
+    height: 10vh;
+    margin-top: 1.5rem;
+    margin-left: 8rem;
+}
+button{
+    height: 3rem;
+    border-radius: 25%;
+    background-color: #3a7a3b;
+    position: relative;
+    bottom: 1rem;
+    
+    
+
+}
