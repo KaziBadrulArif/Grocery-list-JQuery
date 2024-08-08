@@ -8,10 +8,14 @@ html, body {
     font-family: "Mate", serif;
     font-weight: 400;
     font-style: normal;
+    
 }
 
+h1{
+    color: white;
+}
 .container{
-    height: 70vh;
+    height: fit-content;
     width: 120vh;
     background-color: #BEDC74;
 }
@@ -20,23 +24,67 @@ html, body {
     display: flex;
     justify-content: center;
 }
-textarea{
+#txtArea{
+    height: 2rem;
     margin-left: 28vh;
     width: 50%;
     resize: none;
 }
 li{
-    height: 10vh;
     margin-top: 1.5rem;
     margin-left: 8rem;
+    list-style: none;
 }
 button{
     height: 3rem;
     border-radius: 25%;
     background-color: #3a7a3b;
-    position: relative;
-    bottom: 1rem;
-    
-    
+    color: white;
+}
 
+/* Style for the checkbox itself */
+input[type="checkbox"] {
+    /* Remove default appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    /* Custom dimensions */
+    width: 20px;
+    height: 20px;
+
+    /* Background and border styles */
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+
+    /* Positioning */
+    margin-right: 10px;
+    vertical-align: middle;
+
+    /* Transition for smooth effect */
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+/* Checked state */
+input[type="checkbox"]:checked {
+    background-color: #4caf50; /* Green background when checked */
+    border-color: #4caf50;
+}
+
+/* Style for the checkmark */
+input[type="checkbox"]:checked::after {
+    content: "\2713"; /* Unicode character for checkmark */
+    color: white;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+}
+
+.items-to-add{
+    background-color: #f0f0f0;
+    border-color: #f0f0f0;
+}
+.items-to-add::selection{
+    border-color: #f0f0f0;
 }
